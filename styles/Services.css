@@ -5,8 +5,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
+/* Header */
 header {
     background: #003366;
     color: white;
@@ -27,7 +29,17 @@ nav {
     padding: 0 20px;
 }
 
-/* Navigation Button Styles */
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
 nav ul li a {
     position: relative;
     color: white;
@@ -49,48 +61,50 @@ nav ul li a::after {
     transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
-/* Hover Effect */
-nav ul li a:hover::after {
-    width: 100%;
-    left: 0;
-}
-
-/* Active Page Effect */
+nav ul li a:hover::after,
 nav ul li a.active::after {
     width: 100%;
     left: 0;
 }
-
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-nav ul {
-    list-style: none;
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url("../Images/raj.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     display: flex;
-    gap: 20px;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: white;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 10px 15px;
-    transition: 0.3s;
 }
 
-nav ul li a.active,
-nav ul li a:hover {
-    /* background: #0055a4; */
-    border-radius: 5px;
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
 }
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
 /* Services Section */
 .services {
     text-align: center;
@@ -112,17 +126,17 @@ nav ul li a:hover {
 /* Service Container */
 .service-container {
     padding-top: 50px;
-    padding-bottom: 50px; /* Added padding at the bottom */
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-/* Reduce the box size */
+/* Service Box */
 .service-box {
-    width: 42%; /* Reduced width slightly */
-    height: 450px; /* Reduced height */
+    width: 42%;
+    height: 450px;
     background: #d0eef7;
     border-radius: 10px;
     overflow: hidden;
@@ -134,13 +148,10 @@ nav ul li a:hover {
     transition: transform 0.3s ease;
 }
 
-/* Prevent overlapping on hover */
 .service-box:hover {
-    transform: scale(1.03); /* Reduced scaling effect */
+    transform: scale(1.03);
 }
 
-
-/* Service Text */
 .service-text {
     padding: 20px;
 }
@@ -155,16 +166,26 @@ nav ul li a:hover {
     font-size: 1.1rem;
     color: #333;
 }
-
 /* Service Image */
-.service-image img {
-    width: 100%;
-    height: auto;
-    display: block;
+.service-image {
+    width: 100%; /* Ensures the image spans the full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px; /* Keeps bottom edges rounded */
 }
 
+.service-image img {
+    width: 100%;
+    height: 300px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures images scale properly without distortion */
+    border-radius: 0 0 10px 10px; /* Keeps rounded corners */
+}
+
+/* Footer */
 footer {
-    margin-top: 50px;
+    margin-top: 30px;
     background: linear-gradient(to right, #003366, #004080);
     color: white;
     padding: 40px 20px;
@@ -179,50 +200,6 @@ footer {
     margin: auto;
 }
 
-.footer-info,
-.footer-contact {
-    flex: 1;
-    min-width: 250px;
-    margin-bottom: 20px;
-}
-
-.footer-info h4,
-.footer-contact h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-.footer-info p,
-.footer-contact p {
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-.footer-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.footer-icons img {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.footer-icons img:hover {
-    transform: scale(1.2);
-}
-
-.footer-contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .footer-contact-form input {
     width: 90%;
     max-width: 350px;
@@ -233,25 +210,4 @@ footer {
     background: rgba(255, 255, 255, 0.2);
     color: white;
     text-align: center;
-}
-
-.footer-contact-form input::placeholder {
-    color: white;
-    opacity: 0.8;
-}
-
-.footer-contact-form button {
-    background: rgba(255, 255, 255, 0.3);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    color: white;
-    font-size: 14px;
-    transition: background 0.3s ease;
-}
-
-.footer-contact-form button:hover {
-    background: rgba(255, 255, 255, 0.5);
 }
