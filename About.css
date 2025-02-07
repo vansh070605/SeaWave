@@ -1,0 +1,66 @@
+.heroSection{
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    width: 100vw ;
+    background-color: aqua;
+}
+
+.heroText{
+    display: flex;
+    flex-direction: row;
+}
+
+.heroText2{
+    width: 35vw;
+    padding-top: 20vh;
+    padding-left: 15vw;
+}
+
+.img1{
+    height: 40vh;
+    width: 47vw;
+    padding-top: 20vh;
+}
+
+.midSection{
+    text-align: center;
+}
+
+.midHeroSec{
+    display: flex;
+    flex-direction: row;
+}
+
+.card2{
+    margin-left: 5vw;
+}
+
+.img2{
+    height: 20vh;
+    width: 20vw;
+}
+
+
+.midLowerSec{
+    width: 80vw;
+    height:40vh ;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+}
+
+.img3{
+    height: 40vh;
+    width: 47vw;
+}
+
+.reviewimg{
+    display: flex;
+    flex-direction: row;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+}
