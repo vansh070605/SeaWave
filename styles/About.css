@@ -10,9 +10,11 @@ header {
     padding: 15px 0;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 8vh;
 }
 
 nav {
@@ -52,7 +54,11 @@ nav ul li a.active,
 nav ul li a:hover {
     /* background: #0055a4; */
     border-radius: 5px;
+    color: white;
+    text-decoration: underline;
 }
+
+
 /*Hero-section*/
 .heroSection{
     display: flex;
@@ -108,6 +114,10 @@ nav ul li a:hover {
 .midSection{
     text-align: center;
    
+}
+
+.midSection h1{
+    font-size: 3rem;
 }
 
 .herocolor{
@@ -183,9 +193,14 @@ nav ul li a:hover {
     
     
 }
+
+.card1,.card2:hover{
+    cursor: pointer;
+}
+
 /*footer*/
 footer {
-    background: linear-gradient(to right, #003366, #004080);
+    background: linear-gradient(to right,  #5ccdef, #23609e);
     color: white;
     padding: 40px 20px;
     text-align: center;
@@ -228,11 +243,8 @@ footer {
     margin-top: 10px;
 }
 
-.footer-icons img {
-    width: 24px;
-    height: 24px;
+.footer-icons:hover{
     cursor: pointer;
-    transition: transform 0.3s ease;
 }
 
 .footer-icons img:hover {
