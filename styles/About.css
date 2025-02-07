@@ -4,79 +4,52 @@
     font-family: "Roboto", serif;
 }
 
-header {
-    background: #003366;
+/* Top Banner */
+.top-banner {
+    background: #002B5B; /* Navy Blue */
     color: white;
-    padding: 15px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    
 }
 
+/* Navigation with Gradient */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 20px;
+    padding: 10px 50px;
+    background: linear-gradient(to bottom, rgba(0, 24, 51, 1) 0%, rgba(0, 43, 91, 0.95) 50%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+.logo img {
+    width: 100px;
 }
 
-nav ul {
+.nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
-    padding: 0;
 }
 
-nav ul li {
+.nav-links li {
     display: inline;
 }
 
-nav ul li a {
-    position: relative;
-    color: white;
+.nav-links a {
     text-decoration: none;
-    font-weight: 600;
-    padding: 10px 15px;
-    transition: color 0.3s ease-in-out;
+    color: whitesmoke; /* Navy Blue */
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-/* Underline Animation */
-nav ul li a::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -4px;
-    width: 0;
-    height: 3px;
-    background: #ffffff;
-    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+.nav-links a:hover {
+    color: #00A6A6; /* Teal Green */
 }
 
-/* Hover Effect */
-nav ul li a:hover::after {
-    width: 100%;
-    left: 0;
-}
-
-/* Active Page Effect */
-nav ul li a.active::after {
-    width: 100%;
-    left: 0;
-}
-
-nav ul li a.active {
-    border-bottom: 3px solid white; /* Adds an underline */
-    padding-bottom: 5px; /* Adjusts spacing */
-}
 
 /*Hero-section*/
 .heroSection{
@@ -133,6 +106,10 @@ nav ul li a.active {
 .midSection{
     text-align: center;
    
+}
+
+.midSection h1{
+    font-size: 3grem;
 }
 
 .herocolor{
@@ -208,9 +185,14 @@ nav ul li a.active {
     
     
 }
+
+.card1,.card2:hover{
+    cursor: pointer;
+}
+
 /*footer*/
 footer {
-    background: linear-gradient(to right, #003366, #004080);
+    background: linear-gradient(to right,  #5ccdef, #23609e);
     color: white;
     padding: 40px 20px;
     text-align: center;
@@ -253,11 +235,8 @@ footer {
     margin-top: 10px;
 }
 
-.footer-icons img {
-    width: 24px;
-    height: 24px;
+.footer-icons:hover{
     cursor: pointer;
-    transition: transform 0.3s ease;
 }
 
 .footer-icons img:hover {
