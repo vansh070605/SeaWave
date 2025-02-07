@@ -383,6 +383,7 @@ nav {
     margin-bottom: 10px;
     margin-right: 20%;
     color: #003366; /* Deep Ocean Blue */
+    margin-left: 7%;
 }
 
 .section-description {
@@ -390,6 +391,7 @@ nav {
     color: #4A4A4A; /* Stormy Gray */
     margin-bottom: 40px;
     margin-right: 1%;
+    margin-left: 5%;
 }
 
 .services-container {

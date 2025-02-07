@@ -97,10 +97,12 @@ nav ul li a:hover::after {
 }
 
 /* Active Page Effect */
-nav ul li a.active::after {
-    width: 100%;
-    left: 0;
+nav ul li a.active {
+    background: #FF5733; /* Highlight effect */
+    border-radius: 5px;
+    padding: 10px 15px;
 }
+
 
 /* Contact Section (Restored as Original) */
 .contact-container {
