@@ -64,7 +64,7 @@
             border-radius: 10px;
         }
         .shipping-section {
-            background-color: #5264a8;
+            background-color:rgb(32, 32, 152);
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -76,7 +76,7 @@
             padding: 50px;
         }
         .shipping-card {
-            background: white;
+            background: rgb(32, 32, 152);
             text-align: center;
             width: 30%;
             border-radius: 8px;
@@ -88,7 +88,302 @@
             object-fit: cover;
         }
         .shipping-card p {
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: rgb(43, 201, 215);
             padding: 15px;
             color: white;
         }
+    
+        .ship-management-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            max-width: 1200px;
+            margin: auto;
+            gap: 50px; /* Added space between text and image */
+        }
+        
+
+        .ship-info {
+            width: 50%;
+        }
+
+        .ship-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .ship-info p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .explore-button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: 2px solid black;
+            background: none;
+            cursor: pointer;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .explore-button:hover {
+            background: black;
+            color: white;
+        }
+
+        .ship-image-container {
+            position: relative;
+            width: 50%;
+        }
+
+        .ship-image-container img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .stats-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: -50px; /* Increased negative value to shift left */
+            background: #4a78a1;
+            color: white;
+            padding: 20px;
+            display: flex;
+            gap: 30px;
+            border-radius: 10px;
+            width: 80%;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .stats-item {
+            text-align: center;
+        }
+
+        .stats-item h2 {
+            font-size: 1.8rem;
+        }
+
+        .stats-item p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .ship-management-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .ship-info, .ship-image-container {
+                width: 100%;
+            }
+
+            .stats-overlay {
+                position: relative;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+        
+        .marine-container {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: aqua;
+        }
+        
+        .marine-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #003366;
+        }
+        
+        .marine-subtitle {
+            font-size: 16px;
+            color: #555;
+            max-width: 600px;
+            margin: 10px auto 30px;
+        }
+        
+        .marine-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .marine-image {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .marine-details {
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .marine-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .marine-card h3 {
+            font-size: 18px;
+            color: #003366;
+        }
+        
+        .marine-card p {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .marine-content {
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+            }
+        
+            .marine-details {
+                text-align: left;
+            }
+        }
+        .testimonial-section {
+            background-color: #4a7b9d;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        .testimonial-container {
+            max-width: 700px;
+            margin: 0 auto;
+            color: white;
+        }
+        
+        .testimonial-stars {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .testimonial-text {
+            font-size: 18px;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+        
+        .testimonial-user {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 15px;
+        }
+        
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+        
+        .testimonial-name {
+            margin-top: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .ship-management {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        
+        .section-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-right: 20%;
+        }
+        
+        .section-description {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 40px;
+            margin-right: 1%;
+        }
+        
+        .services-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centers the entire section */
+            justify-content: center;
+            width: 100%;
+            text-align: center; /* Ensures the heading is centered */
+            padding: 40px 0;
+        }
+        
+        .service {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centers the content */
+            gap: 20px;
+            max-width: 70%; /* Keeps the section properly centered */
+            margin-bottom: 30px;
+            margin-left: 21%;
+        }
+        
+        .service:nth-child(even) {
+            flex-direction: row; /* Keeps all images on the left */
+        }
+        
+        .service-image {
+            width: 350px; /* Adjusts image size for better proportion */
+            height: auto;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        
+        .service-text {
+            max-width: 400px;
+            text-align: left;
+        }
+        
+        .service-title {
+            font-size: 18px; /* Slightly reduced font size */
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .service-description {
+            font-size: 14px; /* Reduced for better readability */
+            color: #555;
+            line-height: 1.5;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .service {
+                flex-direction: column; /* Stack image and text for small screens */
+                text-align: center;
+            }
+        
+            .service:nth-child(even) {
+                flex-direction: column; /* Ensures consistency on smaller screens */
+            }
+        
+            .service-text {
+                text-align: center;
+            }
+        }
+        
+        
