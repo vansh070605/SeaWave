@@ -91,16 +91,22 @@ nav ul li a::after {
 }
 
 /* Hover Effect */
-nav ul li a:hover::after {
+/* nav ul li a:hover::after {
     width: 100%;
     left: 0;
-}
+} */
 
 /* Active Page Effect */
 nav ul li a.active {
     background: #FF5733; /* Highlight effect */
     border-radius: 5px;
     padding: 10px 15px;
+}
+
+.nav-links a:hover {
+    background: #FF5733 !important;  /* Red background on hover */
+    color: white !important;
+    border-radius: 8px;
 }
 
 
