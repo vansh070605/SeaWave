@@ -77,15 +77,17 @@ nav ul li a:hover {
 /* Service Container */
 .service-container {
     padding-top: 50px;
+    padding-bottom: 50px; /* Added padding at the bottom */
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-/* Service Boxes */
+/* Reduce the box size */
 .service-box {
-    width: 45%;
+    width: 42%; /* Reduced width slightly */
+    height: 450px; /* Reduced height */
     background: #d0eef7;
     border-radius: 10px;
     overflow: hidden;
@@ -94,13 +96,14 @@ nav ul li a:hover {
     align-items: center;
     text-align: left;
     justify-content: space-between;
-    height: 500px; /* Set a fixed height */
+    transition: transform 0.3s ease;
 }
 
-
+/* Prevent overlapping on hover */
 .service-box:hover {
-    transform: scale(1.05);
+    transform: scale(1.03); /* Reduced scaling effect */
 }
+
 
 /* Service Text */
 .service-text {
@@ -126,6 +129,7 @@ nav ul li a:hover {
 }
 
 footer {
+    margin-top: 50px;
     background: linear-gradient(to right, #003366, #004080);
     color: white;
     padding: 40px 20px;
