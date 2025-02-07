@@ -17,17 +17,26 @@
             <a href="index.html" class="logo">
                 <img src="../Images/Logo.png" alt="Rama Ship Management Logo">
             </a>
-            <ul class="nav-links">
-                <li><a href="Home.html" class="active">Home</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+            <ul>
+                <li><a href="Home.html" class="animated-button">Home</a></li>
+                <li><a href="Services.html" class="animated-button active">Services</a></li>
+                <li><a href="About.html" class="animated-button">About</a></li>
+                <li><a href="Contact.html" class="animated-button">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Sea Wave Shipping Line Limited</h1>
+            <p>Providing top-tier technical management, crew training, insurance, procurement, and technology solutions.</p>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section class="services">
-        <h2>Sea Wave Shipping Line Limited</h2>
+        <h2>Our Services</h2>
         <p>Offering specialized solutions in technical management, crew training, insurance,</p>
         <p>procurement, and cutting-edge technology services.</p> 
 
@@ -83,18 +92,17 @@
     </footer> -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-    const currentPage = window.location.pathname.split("/").pop(); // Get current page filename
-    const navLinks = document.querySelectorAll("nav ul li a");
+            const currentPage = window.location.pathname.split("/").pop(); // Get current page filename
+            const navLinks = document.querySelectorAll("nav ul li a");
 
-    navLinks.forEach(link => {
-        if (link.getAttribute("href") === currentPage) {
-            link.classList.add("active");
-        } else {
-            link.classList.remove("active");
-        }
-    });
-});
-
+            navLinks.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active");
+                } else {
+                    link.classList.remove("active");
+                }
+            });
+        });
     </script>
 </body>
 </html>
