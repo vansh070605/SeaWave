@@ -47,7 +47,39 @@ nav ul li a:hover {
     /* background: #0055a4; */
     border-radius: 5px;
 }
+/* Navigation Button Styles */
+nav ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
 
+/* Underline Animation */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Active Page Effect */
+nav ul li a.active::after {
+    width: 100%;
+    left: 0;
+}
 .heroSection{
     display: flex;
     flex-direction: row;

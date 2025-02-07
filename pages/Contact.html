@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Rama Ship</title>
+    <title>Contact - Sea Wave Shipping Line Limited</title>
     <link rel="stylesheet" href="../styles/Contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="script.js"></script>
@@ -13,10 +13,11 @@
         <nav>
             <div class="logo">Sea Wave Shipping Line Ltd.</div>
             <ul>
-                <li><a href="Home.html" class="animated-button active">Home</a></li>
+                <li><a href="Home.html" class="animated-button">Home</a></li>
                 <li><a href="Services.html" class="animated-button">Services</a></li>
                 <li><a href="About.html" class="animated-button">About</a></li>
-                <li><a href="Contact.html" class="animated-button">Contact</a></li>
+                <li><a href="Contact.html" class="animated-button active">Contact</a></li>
+
             </ul>
         </nav>
     </header>
@@ -74,6 +75,20 @@
             </div>
         </div>
     </footer>
-    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop(); // Get current page filename
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    navLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
+    });
+});
+
+    </script>
 </body>
 </html>

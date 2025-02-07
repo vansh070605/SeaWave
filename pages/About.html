@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/About.css">
-    <title>About Sea Wave Shipping Line Ltd</title>
+    <title>About - Sea Wave Shipping Line Limited</title>
 </head>
 <body>
     <header>
@@ -97,5 +97,30 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get current page filename
+            let currentPage = window.location.pathname.split("/").pop();
+    
+            // Map pages to their corresponding navbar link IDs
+            let pageMap = {
+                "Home.html": "home-link",
+                "Services.html": "services-link",
+                "About.html": "about-link",
+                "Contact.html": "contact-link"
+            };
+    
+            // Remove 'active' from all links
+            document.querySelectorAll("nav ul li a").forEach(link => {
+                link.classList.remove("active");
+            });
+    
+            // Add 'active' class to the current page link
+            if (pageMap[currentPage]) {
+                document.getElementById(pageMap[currentPage]).classList.add("active");
+            }
+        });
+    </script>
+    
 </body>
 </html>
