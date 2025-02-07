@@ -3,15 +3,29 @@
 *{
     font-family: "Roboto", serif;
 }
-
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #F0F3F5;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+header {
+    padding-bottom: 25px;
+    width: 100%;
+    overflow: hidden; /* Ensures no extra space */
+}
 /* Top Banner */
 .top-banner {
-    background: #002B5B; /* Navy Blue */
+    background: #001833 !important; /* Matches navbar's starting color */
     color: white;
     text-align: center;
     padding: 10px;
     font-weight: bold;
-    
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Adds a soft dark blur */
 }
 
 /* Navigation with Gradient */
@@ -19,10 +33,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 50px;
+    padding: 25px 50px;
     background: linear-gradient(to bottom, rgba(0, 24, 51, 1) 0%, rgba(0, 43, 91, 0.95) 50%, rgba(255, 255, 255, 0) 100%);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    
+    border-bottom: none;
+    width: 95%;
 }
 
 .logo img {

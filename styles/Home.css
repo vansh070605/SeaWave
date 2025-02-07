@@ -457,4 +457,95 @@ nav {
     }
 }
 
+footer {
+    background: linear-gradient(to right, #003366, #004080);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-info,
+.footer-contact {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-info h4,
+.footer-contact h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-info p,
+.footer-contact p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-icons img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.footer-icons img:hover {
+    transform: scale(1.2);
+}
+
+.footer-contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-contact-form input {
+    width: 90%;
+    max-width: 350px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+}
+
+.footer-contact-form input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+.footer-contact-form button {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.footer-contact-form button:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
 
