@@ -1,0 +1,76 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.services p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+/* Service Container */
+.service-container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Service Boxes */
+.service-box {
+    width: 45%;
+    background: #d0eef7;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    height: 500px; /* Set a fixed height */
+}
+
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+/* Service Text */
+.service-text {
+    padding: 20px;
+}
+
+.service-text h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service-text p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Service Image */
+.service-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
