@@ -58,8 +58,8 @@ nav ul li a:hover {
     display: flex;
     flex-direction: row;
     height: 70vh;
-     width: 100vw ; 
-    
+    width: 100vw ; 
+    margin-bottom: 5vh;
 }
 
 .heroText{

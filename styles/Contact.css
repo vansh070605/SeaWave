@@ -8,6 +8,7 @@ body {
     color: #333;
 }
 
+/* Header & Navbar */
 header {
     background: #003366;
     color: white;
@@ -44,20 +45,41 @@ nav ul li {
     display: inline;
 }
 
+/* Navigation Button Styles */
 nav ul li a {
+    position: relative;
     color: white;
     text-decoration: none;
     font-weight: 600;
     padding: 10px 15px;
-    transition: 0.3s;
+    transition: color 0.3s ease-in-out;
 }
 
-nav ul li a.active,
-nav ul li a:hover {
-    /* background: #0055a4; */
-    border-radius: 5px;
+/* Underline Animation */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
+/* Hover Effect */
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Active Page Effect */
+nav ul li a.active::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Contact Section (Restored as Original) */
 .contact-container {
     display: flex;
     justify-content: center;
@@ -67,7 +89,6 @@ nav ul li a:hover {
     padding: 60px 20px;
     text-align: center;
     gap: 50px;
-    
 }
 
 .contact-form {
@@ -151,6 +172,7 @@ iframe {
     border-radius: 10px;
 }
 
+/* Footer */
 footer {
     background: linear-gradient(to right, #003366, #004080);
     color: white;
@@ -243,7 +265,7 @@ footer {
     background: rgba(255, 255, 255, 0.5);
 }
 
-
+/* Responsive Design */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -252,15 +274,9 @@ footer {
 
     .contact-container {
         flex-direction: column;
-        text-align: center;
-    }
-
-    .contact-image img {
-        width: 80%;
     }
 
     .footer-container {
         flex-direction: column;
-        text-align: center;
     }
 }

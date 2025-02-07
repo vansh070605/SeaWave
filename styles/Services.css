@@ -27,6 +27,41 @@ nav {
     padding: 0 20px;
 }
 
+/* Navigation Button Styles */
+nav ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Underline Animation */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Active Page Effect */
+nav ul li a.active::after {
+    width: 100%;
+    left: 0;
+}
+
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -77,15 +112,17 @@ nav ul li a:hover {
 /* Service Container */
 .service-container {
     padding-top: 50px;
+    padding-bottom: 50px; /* Added padding at the bottom */
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-/* Service Boxes */
+/* Reduce the box size */
 .service-box {
-    width: 45%;
+    width: 42%; /* Reduced width slightly */
+    height: 450px; /* Reduced height */
     background: #d0eef7;
     border-radius: 10px;
     overflow: hidden;
@@ -94,13 +131,14 @@ nav ul li a:hover {
     align-items: center;
     text-align: left;
     justify-content: space-between;
-    height: 500px; /* Set a fixed height */
+    transition: transform 0.3s ease;
 }
 
-
+/* Prevent overlapping on hover */
 .service-box:hover {
-    transform: scale(1.05);
+    transform: scale(1.03); /* Reduced scaling effect */
 }
+
 
 /* Service Text */
 .service-text {
@@ -126,6 +164,7 @@ nav ul li a:hover {
 }
 
 footer {
+    margin-top: 50px;
     background: linear-gradient(to right, #003366, #004080);
     color: white;
     padding: 40px 20px;
