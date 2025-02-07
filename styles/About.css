@@ -10,11 +10,9 @@ header {
     padding: 15px 0;
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: 8vh;
 }
 
 nav {
@@ -43,21 +41,42 @@ nav ul li {
 }
 
 nav ul li a {
+    position: relative;
     color: white;
     text-decoration: none;
     font-weight: 600;
     padding: 10px 15px;
-    transition: 0.3s;
+    transition: color 0.3s ease-in-out;
 }
 
-nav ul li a.active,
-nav ul li a:hover {
-    /* background: #0055a4; */
-    border-radius: 5px;
-    color: white;
-    text-decoration: underline;
+/* Underline Animation */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
+/* Hover Effect */
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Active Page Effect */
+nav ul li a.active::after {
+    width: 100%;
+    left: 0;
+}
+
+nav ul li a.active {
+    border-bottom: 3px solid white; /* Adds an underline */
+    padding-bottom: 5px; /* Adjusts spacing */
+}
 
 /*Hero-section*/
 .heroSection{
@@ -114,10 +133,6 @@ nav ul li a:hover {
 .midSection{
     text-align: center;
    
-}
-
-.midSection h1{
-    font-size: 3rem;
 }
 
 .herocolor{
@@ -193,14 +208,9 @@ nav ul li a:hover {
     
     
 }
-
-.card1,.card2:hover{
-    cursor: pointer;
-}
-
 /*footer*/
 footer {
-    background: linear-gradient(to right,  #5ccdef, #23609e);
+    background: linear-gradient(to right, #003366, #004080);
     color: white;
     padding: 40px 20px;
     text-align: center;
@@ -243,8 +253,11 @@ footer {
     margin-top: 10px;
 }
 
-.footer-icons:hover{
+.footer-icons img {
+    width: 24px;
+    height: 24px;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .footer-icons img:hover {
