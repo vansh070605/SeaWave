@@ -64,6 +64,13 @@ nav {
 .nav-links a:hover {
     color: #00A6A6; /* Teal Green */
 }
+.nav-links a.active {
+    background: #FF5733;;
+    border-radius: 5px;
+    padding: 8px 12px;
+    transition: background 0.3s ease;
+}
+
 
 
 /*Hero-section*/
