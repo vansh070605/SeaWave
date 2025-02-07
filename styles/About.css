@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&display=swap');
 
-*{
-    font-family: "Roboto", serif;
+* {
+    font-family: 'Verdana', sans-serif;
 }
+
 body {
     font-family: 'Verdana', sans-serif;
     margin: 0;
@@ -11,11 +12,15 @@ body {
     background: #F0F3F5;
     overflow-x: hidden; /* Prevents horizontal scrolling */
 }
+
+
+/* Header Section */
 header {
     padding-bottom: 25px;
     width: 100%;
     overflow: hidden; /* Ensures no extra space */
 }
+
 /* Top Banner */
 .top-banner {
     background: #001833 !important; /* Matches navbar's starting color */
@@ -28,7 +33,9 @@ header {
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Adds a soft dark blur */
 }
 
-/* Navigation with Gradient */
+
+
+/* Navigation with Smooth Gradient */
 nav {
     display: flex;
     justify-content: space-between;
@@ -37,17 +44,25 @@ nav {
     background: linear-gradient(to bottom, rgba(0, 24, 51, 1) 0%, rgba(0, 43, 91, 0.95) 50%, rgba(255, 255, 255, 0) 100%);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-bottom: none;
-    width: 95%;
+    width: 100%;
+}
+
+/* Logo Styling */
+.logo {
+    margin-left: 60px; /* Slightly shifts the logo right */
 }
 
 .logo img {
-    width: 100px;
+    width: 140px;
+    display: block;
 }
 
+/* Navigation Links */
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    margin-right: 50px; /* Keeps navigation aligned properly */
 }
 
 .nav-links li {
@@ -56,21 +71,27 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: whitesmoke; /* Navy Blue */
+    color: white;
     font-weight: bold;
-    transition: color 0.3s ease;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 15px;
+    border-radius: 8px;
 }
 
-.nav-links a:hover {
-    color: #00A6A6; /* Teal Green */
-}
+/* Active Page Indicator */
 .nav-links a.active {
-    background: #FF5733;;
-    border-radius: 5px;
-    padding: 8px 12px;
-    transition: background 0.3s ease;
+    background: #FF5733 !important;
+    color: white !important;
+    border-radius: 8px;
 }
 
+/* Hover Effect */
+.nav-links a:hover {
+    background: #FF5733 !important;  /* Red background on hover */
+    color: white !important;
+    border-radius: 8px;
+}
 
 
 /*Hero-section*/
