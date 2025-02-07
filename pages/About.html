@@ -17,10 +17,10 @@
         <nav>
             <div class="logo">Sea Wave Shipping Line Ltd.</div>
             <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Contact.html" class="active">Contact</a></li>
+                <li><a href="Home.html" class="animated-button">Home</a></li>
+                <li><a href="Services.html" class="animated-button">Services</a></li>
+                <li><a href="About.html" class="active">About</a></li>
+                <li><a href="Contact.html" class="animated-button">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -119,27 +119,18 @@
     </footer>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Get current page filename
-            let currentPage = window.location.pathname.split("/").pop();
-    
-            // Map pages to their corresponding navbar link IDs
-            let pageMap = {
-                "Home.html": "home-link",
-                "Services.html": "services-link",
-                "About.html": "about-link",
-                "Contact.html": "contact-link"
-            };
-    
-            // Remove 'active' from all links
-            document.querySelectorAll("nav ul li a").forEach(link => {
-                link.classList.remove("active");
-            });
-    
-            // Add 'active' class to the current page link
-            if (pageMap[currentPage]) {
-                document.getElementById(pageMap[currentPage]).classList.add("active");
-            }
-        });
+    const currentPage = window.location.pathname.split("/").pop(); // Get current page filename
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    navLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
+    });
+});
+
     </script>
     
 </body>
