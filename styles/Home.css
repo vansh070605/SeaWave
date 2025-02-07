@@ -37,7 +37,7 @@
         }
         .hero {
             position: relative;
-            background: url('/Images/ShipBackground.jpg') no-repeat center center/cover;
+            background: url('../Images/ShipBackground.jpg') no-repeat center center/cover;
             height: 100vh; /* Adjust height as needed */
             width: 100%; /* Avoid using more than 100% width */
             display: flex;

@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&display=swap');
+
+*{
+    font-family: "Roboto", serif;
+}
+
+header {
+    background: #003366;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    /* background: #0055a4; */
+    border-radius: 5px;
+}
+/*Hero-section*/
+.heroSection{
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+     width: 100vw ; 
+    
+}
+
+.heroText{
+    display: flex;
+    flex-direction: row;
+}
+
+.heroText2{
+    width: 35vw;
+    padding-top: 20vh;
+    padding-left: 15vw;
+    margin-right: 5vw;
+}
+
+.heroText2 h1{
+    font-size: 3rem;
+}
+
+.img1{
+    height: 40vh;
+    width: 40vw;
+    margin-top: 20vh;
+    border-radius: 10px;
+    
+}
+
+.btn {
+    background-color: #003366;
+    width: 10vw;
+    height: 3vw;
+    padding: 0.5vw;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #004080;
+}
+
+
+/*mid Section*/
+.midSection{
+    text-align: center;
+   
+}
+
+.herocolor{
+    background-color: #D0EEF7;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.midHeroSec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    
+}
+
+.card2{
+    margin-left: 5vw;
+}
+
+.img2{
+    height: 30vh;
+    width: 30vw;
+    border-radius: 10px;
+}
+
+.midLowerSec {
+    width: 80vw;
+    height: 40vh;
+    background-color: #003366;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    margin-left: 21vh; 
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+
+.img3{
+    height: 40vh;
+    width: 47vw;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.reviewimg{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.stars{
+    display: flex;
+    flex-direction: row;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+}
+.review1{
+    width: 30vw ;
+    margin-left: 1.5vw;
+    
+    
+}
+/*footer*/
+footer {
+    background: linear-gradient(to right, #003366, #004080);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: -1vh;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-info,
+.footer-contact {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-info h4,
+.footer-contact h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-info p,
+.footer-contact p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-icons img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.footer-icons img:hover {
+    transform: scale(1.2);
+}
+
+.footer-contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-contact-form input {
+    width: 90%;
+    max-width: 350px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+}
+
+.footer-contact-form input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+.footer-contact-form button {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.footer-contact-form button:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
