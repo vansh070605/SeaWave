@@ -53,7 +53,7 @@ nav ul li a {
 
 nav ul li a.active,
 nav ul li a:hover {
-    background: #0055a4;
+    /* background: #0055a4; */
     border-radius: 5px;
 }
 /* Services Section */

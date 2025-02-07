@@ -44,7 +44,7 @@ nav ul li a {
 
 nav ul li a.active,
 nav ul li a:hover {
-    background: #0055a4;
+    /* background: #0055a4; */
     border-radius: 5px;
 }
 
@@ -52,7 +52,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: row;
     height: 70vh;
-    width: 100vw ;
+    /* width: 100vw ; */
     background-color: aqua;
 }
 
@@ -70,7 +70,7 @@ nav ul li a:hover {
 
 .img1{
     height: 40vh;
-    width: 47vw;
+    width: 40vw;
     padding-top: 20vh;
 }
 
