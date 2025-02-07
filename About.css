@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&display=swap');
+
+*{
+    font-family:"Roboto", serif; ;
+}
+/*Hero Section CSS*/
 .heroSection{
     display: flex;
     flex-direction: row;
@@ -14,15 +20,29 @@
 .heroText2{
     width: 35vw;
     padding-top: 20vh;
-    padding-left: 15vw;
-    margin-right: 5vw;
+    padding-left: 12vw;
+    margin-right: 3vw;
+}
+
+.heroText2 h1{
+    font-size: 3rem;
 }
 
 .img1{
     height: 40vh;
     width: 47vw;
     padding-top: 20vh;
+    border-radius: 20px;
 }
+.btn {
+    background-color: whitesmoke;
+    width: 5vw;
+    height: 3vh;
+    border: 2px solid black;
+    padding: 1.5vh; /* Adds 1.5vh padding on all sides */
+}
+
+/*Middle Section*/
 
 .midSection{
     text-align: center;
@@ -31,6 +51,7 @@
 .midHeroSec{
     display: flex;
     flex-direction: row;
+    
 }
 
 .card2{
