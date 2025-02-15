@@ -27,11 +27,6 @@ SeaWave/
 - 🖥️ Interactive elements powered by JavaScript  
 - 📂 Organized file structure for easy navigation  
 
-## 📷 Screenshots  
-
-![SeaWave Screenshot](Images/screenshot.png)  
-*(Add actual screenshots or GIFs showcasing your project)*  
-
 ## 🛠️ Installation  
 
 1. Clone this repository:  
